@@ -1,107 +1,90 @@
 /* Universal Styles */
-
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
-
 .main-content {
   position: relative;
-  top: 5.3125rem; /* To offset for fixed header. */
+  top: 5.3125rem;        /* To offset for fixed header. */
 }
-
 .center {
   text-align: center;
 }
-
 .button {
   border-radius: 4px;
   background-color: #4a4a4a;
   color: white;
 }
-
 .image-container {
   overflow: hidden;
 }
-
 .image-container img {
   display: block;
 }
-
 @media only screen and (max-width: 760px) {
   .main-content {
     top: 2.5625rem;
   }
 }
-
 /* Header */
-
 header {
   position: fixed;
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
+  z-index: 5;
+  height: 85px;
   background-color: white;
 }
-
 header .content {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 1.875rem;
 }
-
 header .logo {
   flex: 1;
 }
-
 header nav ul {
   display: flex;
 }
-
 nav li {
   padding-left: 3.5rem;
 }
-
 nav a {
   vertical-align: bottom;
   line-height: 1.6;
   font-size: 1rem;
   color: #4a4a4a;
+  font-family: Roboto;
+  line-height: 1.6;
 }
-
 header .icon {
   width: 1rem;
   padding-left: .75rem;
 }
-
 header .mobile {
   display: none;
 }
-
 @media only screen and (max-width: 760px) {
   header .desktop {
     display: none;
   }
-
   header .mobile {
     display: block;
     width: 100%;
   }
-
   header .content {
     padding: .5rem 0;
   }
-
   header .mobile ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
   }
-
   header .mobile li {
     padding: 0;
   }
-
   header .mobile .button {
     padding: .1875rem .5rem;
     background-color: #9dc20b;
@@ -109,23 +92,20 @@ header .mobile {
     color: white;
   }
 }
-
 /* Sign Up Section */
-
 #sign-up-section {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   height: 43.5rem;
+  background-image : url("../images/banner-landingpage.jpg")
 }
-
 #sign-up-cta {
   padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
 }
-
 #sign-up-cta .content {
   width: 25.625rem;
   margin-top: 2rem;
@@ -134,40 +114,32 @@ header .mobile {
   line-height: 1.4;
   color: white;
 }
-
 #sign-up-cta h1 {
   font-size: 3.125rem;
 }
-
 #sign-up-cta h2 {
   font-size: 2.25rem;
 }
-
 #sign-up-cta span strong {
   font-weight: bold;
 }
-
 #sign-up-cta .cursive {
   font-family: "Damion", cursive;
 }
-
 #sign-up-cta .striking {
   font-family: "Rubik", sans-serif;
   padding-bottom: .75rem;
 }
-
 #sign-up-cta .button {
   margin-top: 1.625rem;
   padding: 1.25rem 7.25rem;
 }
-
 @media only screen and (max-width: 760px) {
   #sign-up-section {
     align-items: center;
     justify-content: center;
     height: 28rem;
   }
-
   #sign-up-cta {
     position: static;
     width: auto;
@@ -175,40 +147,31 @@ header .mobile {
     background-color: transparent;
     border: none;
   }
-
   #sign-up-cta .content {
     margin-top: 0;
   }
-
   #sign-up-cta .email {
     display: none;
   }
-
   #sign-up-cta h1 {
     font-size: 3.125rem;
   }
-
   #sign-up-cta h2 {
     font-size: 2.25rem;
   }
 }
-
 @media only screen and (max-width: 450px) {
   #sign-up-section {
     height: 20rem;
   }
-
   #sign-up-cta h1 {
     font-size: 2.25rem;
   }
-
   #sign-up-cta h2 {
     font-size: 2rem;
   }
 }
-
 /* Features Section */
-
 #features-section {
   display: flex;
   justify-content: space-between;
